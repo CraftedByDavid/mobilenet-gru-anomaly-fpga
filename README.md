@@ -10,7 +10,7 @@ This project implements an **INT8-quantized, tiled convolution hardware accelera
 
 The pipeline pairs a **MobileNet** backbone (spatial feature extraction) with a **GRU** temporal head (detecting anomalies across frames, not just within a single one), with the convolutional layers accelerated in custom hardware.
 
-This work is documented in a peer-reviewed paper: *[paper title]*, published at ICSPCI 2025 (IEEE Xplore, DOI: 10.1109/ICCSPCI68199.2025.11451603).
+This work is documented in a peer-reviewed paper: *A Configurable FPGA Accelerator for 2D Convolution with Reduced Memory Footprint using Patch-Based General Matrix-Matrix Multiplication, published at ICSPCI 2025 (IEEE Xplore, DOI: 10.1109/ICCSPCI68199.2025.11451603).
 
 ---
 
@@ -60,18 +60,17 @@ See `Project_diagrams/` for the system-level and core architecture block diagram
 - Standard convolution
 - Depthwise convolution
 - INT8 quantized inference
-- [Add: ReLU / pooling / GRU-specific ops if applicable]
+
 
 ---
 
 ## 📊 Results & Performance
 
-[Fill: latency comparison table — CPU vs. FPGA, resource utilization (LUTs/BRAM/DSP), clock frequency, timing closure — same format as your earlier project]
 
 | Platform | Method | Time |
 |---|---|---|
-| CPU | Software inference | |
-| FPGA | [DMA method] | |
+| CPU | Software inference | 2 second |
+| FPGA | [DMA method] | 700 millisecond |
 
 ---
 
@@ -92,7 +91,7 @@ See `Project_diagrams/` for the system-level and core architecture block diagram
 
 ## 📄 Publication
 
-[Paper title], ICSPCI 2025 (IEEE Xplore) — DOI: [10.1109/ICCSPCI68199.2025.11451603](https://doi.org/10.1109/ICCSPCI68199.2025.11451603)
+A Configurable FPGA Accelerator for 2D Convolution with Reduced Memory Footprint using Patch-Based General Matrix-Matrix Multiplication, ICSPCI 2025 (IEEE Xplore) — DOI: [10.1109/ICCSPCI68199.2025.11451603](https://doi.org/10.1109/ICCSPCI68199.2025.11451603)
 
 ---
 
