@@ -81,6 +81,9 @@ See `Project_diagrams/` for the system-level and core architecture block diagram
 https://github.com/user-attachments/assets/75a13f53-da49-432f-ac2e-db55f4a868c0
 
 
+
+https://github.com/user-attachments/assets/6de689e9-2b0f-4ba5-a4db-c1b12b1ce60a
+
 ## ⚠️ Known Limitations / Work in Progress
 
 - [From the architecture doc: note any disabled features relevant to share publicly — e.g. per-channel scale factor support is implemented but not yet enabled]
