@@ -72,6 +72,8 @@ See `Project_diagrams/` for the system-level and core architecture block diagram
 | CPU | Software inference | 2 second |
 | FPGA | [DMA method] | 700 millisecond |
 
+[![Demo Video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
 ---
 
 ## ⚠️ Known Limitations / Work in Progress
