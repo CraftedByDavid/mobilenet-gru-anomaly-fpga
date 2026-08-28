@@ -72,7 +72,7 @@ See `Project_diagrams/` for the system-level and core architecture block diagram
 | CPU | Software inference | 2 second |
 | FPGA | [DMA method] | 700 millisecond |
 
-[![Demo Video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Demo Video]([https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID](https://github.com/user-attachments/assets/75a13f53-da49-432f-ac2e-db55f4a868c0))
 
 ---
 
