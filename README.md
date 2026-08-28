@@ -1,6 +1,6 @@
 # RISC-V Reconfigurable Hardware Accelerator for Edge Anomaly Detection
 
-[Fill: one-line tagline, e.g. "An FPGA-based accelerator for real-time, on-device video anomaly detection using a MobileNet + GRU pipeline, targeting a Xilinx ZCU104."]
+An FPGA-based accelerator for real-time, on-device anomaly detection using a MobileNet + GRU pipeline, targeting a Xilinx ZCU104. Builds on [reconfigurable-fpga-accelerator-for-lightweight-cnns-on-edge-devices](https://github.com/CraftedByDavid/reconfigurable-fpga-accelerator-for-lightweight-cnns-on-edge-devices) — the same reconfigurable hardware base, upgraded and converted for anomaly detection.
 
 ---
 
@@ -39,7 +39,7 @@ The accelerator is a network of hand-written Verilog modules coordinated by a ma
 - **DWM** — requantization stage (scale, round, shift, saturate, optional ReLU)
 - **SumMux** — selects between depthwise and standard-conv accumulation paths
 
-[Insert block diagram — Project_diagrams/]
+See `Project_diagrams/` for the system-level and core architecture block diagrams.
 
 ### Memory Architecture
 
@@ -52,8 +52,6 @@ The accelerator is a network of hand-written Verilog modules coordinated by a ma
 - `pack_layer()` — packs MobileNet layer weights + bias into the 128-lane BRAM format (once per layer, at setup)
 - `pack_fmap()` — packs input activation tiles into the same format (every layer, every inference)
 - Output arrays are DMA-ready (`V128` dtype), written via `write_kernel_to_cdma()` / `write_fmap_to_cdma()`
-
-[Insert diagrams from the pack_layer/pack_fmap deep-dive doc]
 
 ---
 
